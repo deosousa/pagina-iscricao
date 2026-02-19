@@ -6,6 +6,15 @@ body{
     padding: 0;
 }
 
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 20px;
+}
+
 .logo{
     display: flex;
     align-items: center;
@@ -17,13 +26,20 @@ body{
 }
 
 .logo img{
-     width: 50px;
-    margin: 10px;
+    width: 50px;
+    margin-right: 10px;
     filter: brightness(0) saturate(100%)
           invert(32%) sepia(98%)
           saturate(1500%)
           hue-rotate(15deg)
           brightness(90%) contrast(110%);
+}
+.logo img:hover{
+    filter: brightness(0) saturate(100%)
+          invert(32%) sepia(98%)
+          saturate(1500%)
+          hue-rotate(15deg)
+          brightness(120%) contrast(110%);
 }
 
 .nav {
@@ -40,4 +56,27 @@ body{
 }
 .nav a:hover{
     color: #fff;
+}
+
+main{
+    padding: 50px 20px;
+}
+
+.content{
+    font-size: 40px;
+}
+.content span{
+    color: #cc5500;
+    /* color: #ff7b54; */
+    line-height: 1.5;
+}
+
+.form-group{
+    margin: 20px;
+}
+.form-group input{
+    padding: 15px;
+    background-color: #2e2e3a;
+    border: solid 2px #333;
+    border-radius: 30px;
 }
